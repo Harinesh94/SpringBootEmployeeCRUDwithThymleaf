@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Creation</title>
+</head>
+<body>
+<div align ="center" style="display: inline;">
+<h1>Employee Creation</h1>
+<form action="saveEmployee" method="post" style="border: solid;padding:2%;text-align: justify;width:48%">
+	<label for="name">Employee Name :</label>
+	<input type="text" name="name" id="name"><br><br>
+	<label for="department">Employee Department :</label>
+	<input type="text" name="department" id="department"><br><br>
+	<label for="address">Employee Address :</label>
+	<input type="text" name="address" id="address"><br><br>
+	<label for="gender">Please select Gender :</label>
+	<input type="radio" name="gender" id="gender" value="M">
+	<label for="M">Male</label>
+	<input type="radio" name="gender" id="gender" value="F">
+	<label for="F">Female</label><br><br>
+	<label>Employee Salary :</label>
+	<input type="text" name="salary" id="salary"><br><br>
+	<!-- <label for="panAvailable">Please select Pan Available status :</label>
+	<input type="radio" name="panAvailable" id="panAvailable" value="true">
+	<label for="true">True</label>
+	<input type="radio" name="panAvailable" id="panAvailable" value="false">
+	<label for="false">False</label><br><br>	 -->
+	<label for="country">Employee Country :</label>
+	<select id="country" name="country">
+   		<option value="Afganistan">Afghanistan</option>
+   		<option value="Albania">Albania</option>
+   		<option value="Algeria">Algeria</option>
+   		<option value="India">India</option>
+   	</select><br><br>
+   	<label for="experience">Employee Experience :</label>
+	<select id="experience" name="experience">
+   		<option value="0">0</option>
+   		<option value="1">1</option>
+   		<option value="2">2</option>
+   		<option value="3">3</option>
+   		<option value="4">4</option>
+   		<option value="5">5</option>
+   	</select><br><br>
+   	<input type="text" id="id" name="id" hidden="true">
+   	<input type="submit" value="Save">	
+</form>
+</div>
+</body>
+</html>
